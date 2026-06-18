@@ -83,33 +83,22 @@ nav a:hover{
 /* HERO SECTION */
 .hero{
 
-.hero {
-    background: url("wheat.jpeg") center center/cover no-repeat;
-    min-height: 100vh;
+    width:100%;
+    height:100vh;
 
-    /* Brightness */
-    filter: brightness(1.4);
+    background:
+    linear-gradient(rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)),
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    url('wheat.jpeg');
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    
+    align-items:center;
 
     
-}
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
-.hero {
-    background: linear-gradient(
-        rgba(255,255,255,0.15),
-        rgba(255,255,255,0.15)
-    ),
-    url("your-image.jpg");
-
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* HERO CONTENT */
