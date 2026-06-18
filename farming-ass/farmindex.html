@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Immersive AR & VR Farming Assistant
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="farm.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+
+            <i class="fa-solid fa-seedling"></i>
+
+            <h2 id="logoText">
+
+                Plants Doctor
+
+            </h2>
+
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav>
+
+            <a href="#home"
+            id="navHome">
+
+                Home
+
+            </a>
+
+            <a href="#crops"
+            id="navCrops">
+
+                Crops
+
+            </a>
+
+            <a href="#ai"
+            id="navAI">
+
+                AI Detection
+
+            </a>
+
+            <a href="#ar"
+            id="navAR">
+
+                AR Scanner
+
+            </a>
+
+            <a href="#vr"
+            id="navVR">
+
+                VR Training
+
+            </a>
+
+        </nav>
+
+        <!-- LANGUAGE -->
+        <div class="language-box">
+
+            <select id="languageSelect"
+            onchange="changeLanguage()">
+
+                <option value="english">
+
+                    English
+
+                </option>
+
+                <option value="telugu">
+
+                    తెలుగు
+
+                </option>
+
+            </select>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero"
+    id="home">
+
+        <div class="hero-content">
+
+            <h1 id="heroTitle">
+
+
+            </h1>
+
+            <p id="heroText">
+
+        
+
+            </p>
+
+            <a href="#crops">
+
+                <button class="hero-btn"
+                id="heroButton">
+
+                    Explore Crops
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- CROPS -->
+    <section class="crops"
+    id="crops">
+
+        <h1 class="section-title"
+        id="cropTitle">
+
+            Crop Disease Categories
+
+        </h1>
+
+        <div class="crop-container">
+
+            <!-- CORN -->
+            <div class="crop-card">
+
+                <img src="corn.jpg"
+                alt="Corn">
+
+                <div class="crop-info">
+
+                    <h2 id="cornTitle">
+
+                        Corn
+
+                    </h2>
+
+                    <p>
+
+                        Rust <br>
+                        Leaf Blight <br>
+                        Downy Mildew
+
+                    </p>
+
+                    <a href="disease-details.html?crop=corn">
+
+                        <button id="cornButton">
+
+                            View Diseases
+
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- MANGO -->
+            <div class="crop-card">
+
+                <img src="mango.jpg"
+                alt="Mango">
+
+                <div class="crop-info">
+
+                    <h2 id="mangoTitle">
+
+                        Mango
+
+                    </h2>
+
+                    <p>
+
+                        Anthracnose <br>
+                        Powdery Mildew <br>
+                        Bacterial Canker
+
+                    </p>
+
+                    <a href="disease-details.html?crop=mango">
+
+                        <button id="mangoButton">
+
+                            View Diseases
+
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PADDY -->
+            <div class="crop-card">
+
+                <img src="paddy.jpg"
+                alt="Paddy">
+
+                <div class="crop-info">
+
+                    <h2 id="paddyTitle">
+
+                        Paddy
+
+                    </h2>
+
+                    <p>
+
+                        Blast Disease <br>
+                        False Smut <br>
+                        Leaf Scald
+
+                    </p>
+
+                    <a href="disease-details.html?crop=paddy">
+
+                        <button id="paddyButton">
+
+                            View Diseases
+
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- GROUNDNUT -->
+            <div class="crop-card">
+
+                <img src="groundnut.jpg"
+                alt="Groundnut">
+
+                <div class="crop-info">
+
+                    <h2 id="groundnutTitle">
+
+                        Groundnut
+
+                    </h2>
+
+                    <p>
+
+                        Aflatoxin Contamination <br>
+                        Stem Necrosis Disease <br>
+                        Tikka Leaf Spot
+
+                    </p>
+
+                    <a href="disease-details.html?crop=groundnut">
+                        <button id="groundnutButton">
+
+                            View Diseases
+
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- WHEAT -->
+            <div class="crop-card">
+
+                <img src="wheat.jpg"
+                alt="Wheat">
+
+                <div class="crop-info">
+
+                    <h2 id="wheatTitle">
+
+                        Wheat
+
+                    </h2>
+
+                    <p>
+
+                        Loose Smut <br>
+                        Septoria Leaf Blotch <br>
+                        Stripe Rust
+
+                    </p>
+
+                    <a href="disease-details.html?crop=wheat">
+                        <button id="wheatButton">
+
+                            View Diseases
+
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- SUGARCANE -->
+            <div class="crop-card">
+
+                <img src="sugarcane.jpg"
+                alt="Sugarcane">
+
+                <div class="crop-info">
+
+                    <h2 id="sugarcaneTitle">
+
+                        Sugarcane
+
+                    </h2>
+
+                    <p>
+
+                        Red Rot <br>
+                        Smut <br>
+                        Wilt
+
+                    </p>
+
+                    <a href="disease-details.html?crop=sugarcane">
+
+                        <button id="sugarcaneButton">
+
+                            View Diseases
+
+                        </button>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AI -->
+    <section class="ai-section"
+    id="ai">
+
+        <h1 class="section-title">
+
+            AI Disease Detection
+
+        </h1>
+
+        <div class="ai-container">
+
+            <div class="upload-box">
+
+                <h2>
+
+                    Scan or Upload Crop Image
+
+                </h2>
+
+                <input
+                     type="file"
+                             id="imageInput"
+                             accept="image/*"
+                                 onchange="previewImage(event)">
+
+                                           <br><br>
+
+                                              <img
+                                id="previewImage"
+                                               style="
+                                               width:200px;
+                                                      display:none;
+                                                             border-radius:10px;
+                                                        ">
+
+                <script>
+
+                     function detectDisease() {
+
+                        const file =
+                           document.getElementById("imageInput").files[0];
+
+                                 if (!file) {
+                                    alert("Please choose an image first");
+                                          return;
+                                           }
+
+                                          alert("Selected: " + file.name);
+
+// continue your AI detection here
+
+                                                 }
+
+</script>
+
+            </div>
+
+            <div class="result-box">
+
+                <h2>
+
+                    Detection Result
+
+                </h2>
+
+                <h3 id="resultTitle">
+
+                    No Disease Detected Yet
+
+                </h3>
+
+                <p id="resultText">
+
+                    Upload or scan crop image
+                    for AI-based disease analysis.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AR -->
+    <section class="ar-section"
+    id="ar">
+
+        <h1 class="section-title">
+
+            Augmented Reality Scanner
+
+        </h1>
+
+        <div class="scanner-container">
+
+            <div class="scanner-box">
+
+                <div class="scanner-frame">
+
+                    <div class="scan-line"></div>
+
+                </div>
+
+            </div>
+
+            <div class="scanner-info">
+
+                <h2>
+
+                    Smart AR Detection
+
+                </h2>
+
+                <p>
+
+                    Real-time crop disease scanning
+                    using AR.js and A-Frame.
+
+                </p>
+
+                <a href="ar-scanner.html">
+
+                    <button>
+
+                        Open AR Scanner
+
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VR -->
+    <section class="vr-section"
+    id="vr">
+
+        <h1 class="section-title">
+
+            Virtual Reality Training
+
+        </h1>
+
+        <div class="scanner-container">
+
+            <div class="scanner-box">
+
+                <div class="scanner-frame">
+
+                    <div class="scan-line"></div>
+
+                </div>
+
+            </div>
+
+            <div class="scanner-info">
+
+                <h2>
+
+                    VR Farming Simulation
+
+                </h2>
+
+                <p>
+
+                    Explore immersive virtual farms
+                    and disease treatment learning.
+
+                </p>
+
+                <a href="vr-farm.html">
+
+                    <button>
+
+                        Open VR Farm
+
+                    </button>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TENSORFLOW -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+
+    <!-- JS -->
+    <script src="farm.js"></script>
+
+</body>
+
+</html>
