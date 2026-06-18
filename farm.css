@@ -87,8 +87,8 @@ nav a:hover{
     height:100vh;
 
     background:
-    linear-gradient(rgba(0,0,0,0.55),
-    rgba(0,0,0,0.55)),
+    linear-gradient(rgba(0,0,0,0.25),
+    rgba(0,0,0,0.15)),
 
     url('wheat.jpeg');
     background-size:cover;
